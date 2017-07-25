@@ -130,7 +130,7 @@ dhd_custom_get_mac_address(void *adapter, unsigned char *buf)
 
 	/* Customer access to MAC address stored outside of DHD driver */
 #if defined(CUSTOMER_HW2) && (LINUX_VERSION_CODE >= KERNEL_VERSION(2, 6, 35))
-    if ((mac[0] != 0) || (mac[1] != 0)) {
+	if ((mac[0] != 0) || (mac[1] != 0)) {
 		bcopy((char *)&mac, buf, 6);
 		return ret;
 	}
