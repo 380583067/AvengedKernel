@@ -18,7 +18,7 @@
  * Inputs:	r0 contains the address
  *		r1 contains the address limit, which must be preserved
  * Outputs:	r0 is the error code
- *		r2, r3 contains the zero-extended value
+ *		r2,r3 contains the zero-extended value
  *		lr corrupted
  *
  * No other registers must be altered.  (see <asm/uaccess.h>
@@ -107,7 +107,7 @@ ENDPROC(__get_user_bad8)
 	.long	2b, __get_user_bad
 	.long	3b, __get_user_bad
 	.long	4b, __get_user_bad
-	.long	5b, __get_user_bad8
+    .long	5b, __get_user_bad8
 	.long	6b, __get_user_bad8
 #ifdef __ARMEB__
 	.long   7b, __get_user_bad

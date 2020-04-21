@@ -147,7 +147,7 @@ extern int __get_user_8(void *);
 		case 4:							\
 			__get_user_x(__r2, __p, __e, __l, 4);		\
 			break;						\
-		case 8:							\
+        case 8:							\
 			if (sizeof((x)) < 8)				\
 				__get_user_xb(__r2, __p, __e, __l, 4);	\
 			else						\
