@@ -1499,6 +1499,8 @@ static void __init tegra_ardbeg_late_init(void)
 #ifdef CONFIG_BLUEDROID_PM
  	ardbeg_setup_bluedroid_pm();
 #endif
+    add_bcm_ldisc_device();
+
 	ardbeg_sysedp_dynamic_capping_init();
 	ardbeg_sysedp_batmon_init();
 }
