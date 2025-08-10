@@ -18,7 +18,7 @@
  * General Public License.
  */
 
-
+#include "sdcardfs.h"
 #ifdef CONFIG_SDCARD_FS_FADV_NOACTIVE
 #include <linux/backing-dev.h>
 #endif
